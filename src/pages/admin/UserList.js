@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { FaSearch } from "react-icons/fa";
 import { Form, InputGroup,Table } from "react-bootstrap";
 import { AiOutlineUserAdd,AiOutlineUserDelete } from "react-icons/ai";
-import data from "./user"
+import data from "./data/user"
 const List=(d)=>{
     return (
             d.map((item)=>{
@@ -101,7 +101,8 @@ export default class UserList extends Component {
                         {
                             console.log(data)
                         }
-                        <Table responsive striped bordered hover variant="dark">
+                        
+                        <Table responsive  variant="dark">
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -113,24 +114,7 @@ export default class UserList extends Component {
                                 </tr>
                             </thead>
                             <tbody>
-                    {List(data)}
-
-                                {/* <List/> */}
-                                {/* <tr>
-                                    <td>1</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td>ok</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                    <td>ok</td>
-                                </tr> */}
-                                
+                                {List(data)}
                             </tbody>
                         </Table>
                     </div>

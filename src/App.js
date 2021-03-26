@@ -1,4 +1,4 @@
-import Home from "./pages/admin/UserList"
+import Home from "./pages/admin/AddUser"
 import Navigation from "./components/Navigation"
 function App() {
   return (

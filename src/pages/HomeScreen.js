@@ -4,7 +4,8 @@ import { Card, Button } from "react-bootstrap";
 // import "./test.css"
 import { FaAngleRight,FaUserFriends,FaRegEnvelope,FaUserCheck,FaRegCalendarAlt } from 'react-icons/fa';
 import {GrDocumentUser} from 'react-icons/gr'
-const media  =window.matchMedia('(max-width:500px)')// key to make it respoonsive
+import media from "./query/media"
+// const media  =window.matchMedia('(max-width:500px)')// key to make it respoonsive
 export default class HomeScreen extends Component {
     constructor(props){
         super(props)
